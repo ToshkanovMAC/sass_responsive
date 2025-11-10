@@ -1,10 +1,8 @@
-// =============== VARIABLES ===============
 $primary: #e46a2e;
 $text-dark: #111;
 $text-light: #fff;
 $container-width: 1200px;
 
-// =============== MIXINS ===============
 @mixin container {
   width: 100%;
   max-width: $container-width;
@@ -55,7 +53,6 @@ a { text-decoration: none; color: inherit; }
   color: $primary;
   padding: 10px 25px;
   border-radius: 6px;
-  cursor: pointer;
   font-weight: 500;
   @include transition;
   &:hover {
@@ -221,3 +218,4 @@ a { text-decoration: none; color: inherit; }
     .update__card { width: 100%; }
   }
 }
+
