@@ -221,29 +221,3 @@ a { text-decoration: none; color: inherit; }
     .update__card { width: 100%; }
   }
 }
-
-.footer {
-  background: #0b0b0b;
-  color: $text-light;
-  padding: 60px 0 20px;
-
-  .container { @include container; }
-
-  .footer__top {
-    @include flex(space-between, start, 40px);
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-  }
-
-  .footer__logo p { margin-top: 10px; opacity: 0.8; }
-  .footer__links h4 { margin-bottom: 10px; color: $primary; }
-  .footer__bottom {
-    text-align: center;
-    opacity: 0.6;
-    font-size: 14px;
-  }
-
-  @include responsive(sm) {
-    .footer__top { flex-direction: column; text-align: center; }
-  }
-}
