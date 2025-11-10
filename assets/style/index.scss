@@ -17,21 +17,26 @@ $container-width: 1200px;
   gap: $gap;
 }
 
-@mixin transition($time:0.3s) {
-  transition: all $time ease;
-}
-
 @mixin responsive($bp) {
   @if $bp == xl {
-    @media (max-width: 1200px) { @content; }
+    @media (max-width: 1200px) {
+      @content;
+    }
   }
-  @if $bp == md {
-    @media (max-width: 992px) { @content; }
+
+  @else if $bp == md {
+    @media (max-width: 992px) {
+      @content;
+    }
   }
-  @if $bp == sm {
-    @media (max-width: 576px) { @content; }
+
+  @else if $bp == sm {
+    @media (max-width: 576px) {
+      @content;
+    }
   }
 }
+
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Poppins', sans-serif; background: #fff; color: $text-dark; }
@@ -218,4 +223,5 @@ a { text-decoration: none; color: inherit; }
     .update__card { width: 100%; }
   }
 }
+
 
